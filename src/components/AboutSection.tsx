@@ -42,13 +42,13 @@ const AboutSection = () => {
               </motion.div>
               <div>
                 <h3 className="mb-1 font-display text-2xl font-bold text-foreground">Harish Parihar</h3>
-                <span className="mb-4 inline-block text-sm font-medium text-primary">Founder & Developer</span>
+                <span className="mb-4 inline-block text-sm font-medium text-primary">Founder & Full Stack Developer</span>
                 <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
-                  TechHim Solutions was founded by Harish Parihar, a passionate frontend developer
+                  TechHim Solutions was founded by Harish Parihar, a passionate full stack developer
                   and technology enthusiast dedicated to building powerful digital solutions for businesses.
                 </p>
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  Started journey as a frontend developer and worked on dashboards, automation tools
+                  With expertise in both frontend and backend technologies, Harish has worked on dashboards, automation tools
                   and business systems. TechHim Solutions was created to help businesses grow using technology.
                 </p>
               </div>
