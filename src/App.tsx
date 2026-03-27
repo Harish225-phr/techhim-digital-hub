@@ -31,6 +31,7 @@ const App = () => {
         </AnimatePresence>
         {!loading && (
           <BrowserRouter>
+            <ScrollToTopOnNav />
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/services" element={<Services />} />
