@@ -7,6 +7,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollToTop from "@/components/ScrollToTop";
+import ScrollToTopOnNav from "@/components/ScrollToTopOnNav";
 import LoadingScreen from "@/components/LoadingScreen";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
