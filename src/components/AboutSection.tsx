@@ -3,6 +3,7 @@ import { Target, Eye } from "lucide-react";
 import founderImg from "@/assets/founder.png";
 import sahilImg from "@/assets/sahil-sharma.webp";
 import logoMain from "@/assets/logo-main.png";
+import ramanThakur from "@/assets/raman-thakur.png";
 
 const AboutSection = () => {
   return (
@@ -61,6 +62,46 @@ const AboutSection = () => {
                     </span>
                   ))}
                 </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Raman Thakur */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-20"
+        >
+          <div className="glass-card glow-border mx-auto max-w-4xl rounded-3xl p-8 md:p-12">
+            <div className="flex flex-col items-center gap-8 md:flex-row">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="h-48 w-48 flex-shrink-0 overflow-hidden rounded-2xl border-2 border-primary/30"
+              >
+                <div className="flex h-full w-full items-center justify-center bg-primary/10">
+                  <img
+                    src={ramanThakur}
+                    alt="Raman Thakur - Tech Head at TechHim Solutions"
+                   className="h-full w-full object-cover"
+                  loading="lazy"
+                  width={192}
+                  height={192}
+                  />
+                </div>
+              </motion.div>
+              <div>
+                <h3 className="mb-1 font-display text-2xl font-bold text-foreground">Raman Thakur</h3>
+                <span className="mb-4 inline-block text-sm font-medium text-primary">Tech Head</span>
+                <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
+                  Raman Thakur serves as the Tech Head at TechHim Solutions, bringing over 20 years of hands-on
+                  experience in software engineering, solution architecture, and digital transformation.
+                </p>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  He has led high-impact technology initiatives across web platforms, business systems, and
+                  automation workflows, helping organizations scale with reliable, modern, and future-ready solutions.
+                </p>
               </div>
             </div>
           </div>
