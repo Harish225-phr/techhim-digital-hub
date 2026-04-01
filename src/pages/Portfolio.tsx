@@ -1,23 +1,17 @@
 import Navbar from "@/components/Navbar";
-import AboutSection from "@/components/AboutSection";
-import TimelineSection from "@/components/TimelineSection";
+import CaseStudiesSection from "@/components/CaseStudiesSection";
 import NumbersSection from "@/components/NumbersSection";
-import AchievementsSection from "@/components/AchievementsSection";
-import TechStackSection from "@/components/TechStackSection";
 import ClientsMarquee from "@/components/ClientsMarquee";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
-const About = () => (
+const Portfolio = () => (
   <>
     <Navbar />
     <main className="pt-24">
-      <AboutSection />
-      <TimelineSection />
+      <CaseStudiesSection />
       <NumbersSection />
-      <AchievementsSection />
-      <TechStackSection />
       <ClientsMarquee />
       <TestimonialsSection />
       <CTASection />
@@ -26,4 +20,4 @@ const About = () => (
   </>
 );
 
-export default About;
+export default Portfolio;

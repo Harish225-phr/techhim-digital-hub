@@ -28,6 +28,10 @@ const Footer = () => {
               {[
                 { label: "Home", path: "/" },
                 { label: "Services", path: "/services" },
+                { label: "Industries", path: "/industries" },
+                { label: "Portfolio", path: "/portfolio" },
+                { label: "Blog", path: "/blog" },
+                { label: "Careers", path: "/careers" },
                 { label: "About", path: "/about" },
                 { label: "Contact", path: "/contact" },
               ].map((link) => (
