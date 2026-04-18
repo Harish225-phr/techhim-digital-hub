@@ -30,27 +30,25 @@ const App = () => {
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <AnimatePresence mode="wait">
-          {loading && <LoadingScreen onComplete={handleComplete} />}
-        </AnimatePresence>
-        {!loading && (
-          <BrowserRouter>
-            <ScrollToTopOnNav />
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/industries" element={<Industries />} />
-              <Route path="/portfolio" element={<Portfolio />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/careers" element={<Careers />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-            <WhatsAppButton />
-            <ScrollToTop />
-          </BrowserRouter>
-        )}
+        <BrowserRouter>
+          <AnimatePresence mode="wait">
+            {loading && <LoadingScreen onComplete={handleComplete} />}
+          </AnimatePresence>
+          <ScrollToTopOnNav />
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/industries" element={<Industries />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/careers" element={<Careers />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          <WhatsAppButton />
+          <ScrollToTop />
+        </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
   );
